@@ -5,4 +5,9 @@ class RecipeTest < ActiveSupport::TestCase
     recipe = Recipe.new
     assert recipe.invalid?
   end
+
+  test "valid recipe using fixtures" do 
+    recipe = recipes(:one)
+    assert_not recipe.invalid?
+  end
 end
