@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+@import "rails_bootstrap_forms";
+
+body {
+    .container {
+        margin-top: 10%
+    }
+}
