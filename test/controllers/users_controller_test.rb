@@ -3,6 +3,8 @@ require 'test_helper'
 class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
     @user = users(:lee)
+    @user.email = "new_email@e.com"
+    @user.username = "new_username@e.com"
   end
 
   test "should get index" do
